@@ -12,7 +12,8 @@ import java.util.Optional;
 // 순수 자바 클래스이므로 스프링이 인식하지 못한다. '@Service 를 추가한다.'
 public class MemberService {
     private final MemberRepository memberRepository;
-
+    
+    // 생성자 주입
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
