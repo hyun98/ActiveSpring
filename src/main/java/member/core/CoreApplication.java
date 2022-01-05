@@ -1,13 +1,13 @@
-package member.membermanage;
+package member.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MemberManageApplication {
+public class CoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MemberManageApplication.class, args);
+		SpringApplication.run(CoreApplication.class, args);
 	}
 	
 }
