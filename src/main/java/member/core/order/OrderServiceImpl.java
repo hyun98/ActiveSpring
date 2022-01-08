@@ -1,16 +1,13 @@
 package member.core.order;
 
 import member.core.discount.DiscountPolicy;
-import member.core.discount.FixDiscountPolicy;
-import member.core.discount.RateDiscountPolicy;
 import member.core.member.Member;
 import member.core.member.MemberRepository;
-import member.core.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService {
 
-    private MemberRepository memberRepository;
-    private DiscountPolicy discountPolicy;
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
 
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
